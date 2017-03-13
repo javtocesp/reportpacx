@@ -95,7 +95,7 @@ def bringreport(fw_ip,jobid):
 def saveXML(report):
     ts=time.time()
     TIMESTAMP=datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d_%H:%M:%S')
-    FILENAME=TIMESTAMP+'_10.10.232.211.xml'
+    FILENAME=TIMESTAMP+'_fwip.xml'
     print FILENAME
     f =  open(FILENAME, "wb")
     f.write(report)
