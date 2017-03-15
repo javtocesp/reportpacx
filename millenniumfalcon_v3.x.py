@@ -7,6 +7,7 @@ from sqlalchemy import create_engine, MetaData
 from sqlalchemy import Column, Integer, String, Float, DateTime, ForeignKey, Table, MetaData
 import requests
 import socket
+import os
 
 Firewall_list=os.environ['FW']
 
