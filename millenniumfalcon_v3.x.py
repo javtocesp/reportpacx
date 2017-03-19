@@ -159,6 +159,7 @@ def testconnection(fwip):
 
 def main():
     conbd=connect_db()
+    Firewall_list = [i.split(",") for i in os.environ.get("FW").split(" ")]
     for firewall in Firewall_list:
         print firewall[0], firewall[1]
         if testconnection(firewall[0]):
